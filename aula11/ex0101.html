@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PAÍS</title>
+</head>
+    
+<body>
+    <h1>Nacionalidades</h1>
+    Insira o País:<input type="text" name="ppn" id="ppi">
+    <input type="button" value="verificar" onclick='verificaNacao()'>
+    <div id="resultado"></div>
+    <script>
+        function verificaNacao(){
+            var info = window.document.querySelector('input#ppi')// pega valor da caixa input e coloca em info
+            var resul = window.document.querySelector('div#resultado')
+            var pais = String(info.value) //transforma info em String
+            resul.innerHTML = `<p>Vivendo no(a) <strong>${pais}</strong></p>`
+            if(pais ==`Brasil`){
+                resul.innerHTML += `<p>Sua Nacionalidade é <strong>Brasileira</strong> </p>`
+            }else{
+                resul.innerHTML += `<p>Sua nacionalidade é <strong>Estrangeira</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>

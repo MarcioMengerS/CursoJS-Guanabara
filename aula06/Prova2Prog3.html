@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function inicializar() {
+            let div = document.getElementById("cpf");
+            div.setAttribute("class","base");
+            div.style.backgroundColor="blue";
+            function eventoBotao(){
+                alert('evento usando');
+            }
+            document.querySelector("cadastrar").addEventListener('click', eventoBotao);
+
+        }
+        window.addEventListener("load",inicializar);
+        window.onload=inicializar;
+    </script>
+</head>
+<body>
+    Replique o exemplo abaixo usando somente javaScript, sem biblioteca de terceiros
+    <br>
+    <hr>
+    <hr>
+    Nova Conta<br>
+    <br>
+    <form>
+        Nome: <input id="nome" type="text"><br>
+        <br>
+        CPF: <input id="cpf" type="text">
+    </form>
+        <br>
+        <br>Lançamentos:<br>
+        <br><strong>Total:</strong><br>
+    <form>
+        <br>Descrição: <input id="descrição" type= "text">
+        Valor: <input id="valor" type= "number"><input id= "botao" type= "submit" value= "Adicionar Lançamento">
+    </form>
+    <br><input id= "cadastrar" type= "submit" value= "Cadastrar">
+    <button id="button">botão</button>
+    
+
+
+    
+</body>
+</html>
