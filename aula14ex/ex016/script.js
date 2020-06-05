@@ -1,4 +1,3 @@
-//alert('Olá!')
 
 function contar(){
     //valores obtidos da página HTML modelo são colocados em variáveis
